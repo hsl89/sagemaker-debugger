@@ -267,7 +267,7 @@ class _TimelineLoggerThread(threading.Thread):
                 _ = self.write_event(event)
             finally:
                 self._queue.task_done()
-            time.sleep(0)
+            time.sleep(0.2)
 
     def open(self, path, cur_event_end_time):
         """
